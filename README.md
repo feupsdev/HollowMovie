@@ -91,6 +91,18 @@ O projeto utiliza Netlify Functions e não precisa de etapa de build.
 
 A configuração de publicação e funções está definida em `netlify.toml`.
 
+### Vercel
+
+O projeto também roda na Vercel sem etapa de build, usando `vercel.json`:
+
+1. Importe o repositório na Vercel (Framework Preset: **Other**, sem build command, output `.`).
+2. Em *Settings → Environment Variables*, adicione `TMDB_API_KEY` (Production e Preview).
+3. Faça o deploy.
+
+`api/tmdb.js` é um adaptador fino que reutiliza a mesma lógica de `netlify/functions/tmdb.mjs`,
+então a chave da TMDB continua apenas no servidor. O `vercel.json` aplica os mesmos headers de
+segurança (incluindo `frame-ancestors https://feupsdev.vercel.app`) e o fallback de SPA.
+
 ## 🧪 Testes
 
 Para executar os testes do proxy da TMDB:
