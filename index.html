@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark" data-accent="violet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>HollowMovie — Filmes e séries para descobrir</title>
+  <meta name="description" content="HollowMovie: descubra filmes e séries em alta, pesquise com filtros, salve favoritos e veja onde assistir no Brasil." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#05060f" />
+  <link rel="canonical" href="https://hollowmovie.netlify.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HollowMovie" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="HollowMovie — Filmes e séries para descobrir" />
+  <meta property="og:description" content="Descubra filmes e séries em alta, pesquise com filtros, salve favoritos e veja onde assistir no Brasil." />
+  <meta property="og:url" content="https://hollowmovie.netlify.app/" />
+  <meta property="og:image" content="https://hollowmovie.netlify.app/assets/img/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HollowMovie — Filmes e séries para descobrir" />
+  <meta name="twitter:description" content="Descubra filmes e séries em alta, pesquise com filtros, salve favoritos e veja onde assistir no Brasil." />
+  <meta name="twitter:image" content="https://hollowmovie.netlify.app/assets/img/og-cover.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://image.tmdb.org" crossorigin />
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <script src="/js/theme-init.js"></script>
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/pages.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "HollowMovie",
+      "url": "https://hollowmovie.netlify.app/",
+      "inLanguage": "pt-BR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://hollowmovie.netlify.app/busca?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</head>
+<body data-header="solid">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <noscript>
+      <div class="container page"><p>O HollowMovie precisa de JavaScript para funcionar. Ative-o no seu navegador e recarregue a página.</p></div>
+    </noscript>
+  </main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="brand" href="/" aria-label="HollowMovie — página inicial">
+        <img src="/assets/img/logo-mark.svg" width="28" height="28" alt="" />
+        <span class="brand__name">Hollow<span>Movie</span></span>
+      </a>
+      <p>Encontre algo que vale a pena assistir.</p>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Navegação do site">
+      <a href="/filmes">Filmes</a>
+      <a href="/series">Séries</a>
+      <a href="/favoritos">Favoritos</a>
+      <a href="/perfil">Perfil</a>
+    </nav>
+
+    <nav class="site-footer__links" aria-label="Contato e redes sociais">
+      <a href="https://feupsdev.vercel.app" target="_blank" rel="noopener noreferrer">Site</a>
+      <a href="https://github.com/feupsdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.instagram.com/feupsdev/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://x.com/feupsdev/" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+      <a href="https://www.linkedin.com/in/felipe-henrique-07990228a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:felipehenriquedsc@gmail.com">E-mail</a>
+    </nav>
+
+    <p class="site-footer__legal">
+      Este produto usa a API da
+      <a href="https://www.themoviedb.org" target="_blank" rel="noopener noreferrer">TMDB</a>,
+      mas não é endossado nem certificado por ela.
+      Disponibilidade de streaming por
+      <a href="https://www.justwatch.com" target="_blank" rel="noopener noreferrer">JustWatch</a>.
+    </p>
+
+    <p class="site-footer__credit">
+      © <span id="year"></span> · Desenvolvido por
+      <a href="https://feupsdev.vercel.app" target="_blank" rel="noopener noreferrer">feups.dev</a>
+    </p>
+  </div>
+</footer>
+
+
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Navegação inferior"></nav>
+  <div id="route-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
